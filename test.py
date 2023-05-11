@@ -13,3 +13,10 @@ importlib.reload(regression)
 model = regression.LinearRegression()
 model.fit(X,Y)
 print(model.theta)
+
+#ver3
+importlib.reload(regression)
+model = regression.LinearRegression()
+model.fit(X,Y)
+model.predict(X)
+print(model.predict(X))
