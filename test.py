@@ -18,5 +18,11 @@ print(model.theta)
 importlib.reload(regression)
 model = regression.LinearRegression()
 model.fit(X,Y)
-model.predict(X)
 print(model.predict(X))
+
+#ver4
+importlib.reload(regression)
+model = regression.LinearRegression()
+model.fit(X,Y)
+print(model.score(X,Y))
+
